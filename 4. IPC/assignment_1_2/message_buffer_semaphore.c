@@ -160,6 +160,7 @@ int produce(MessageBuffer **buffer, int sender_id, char *data) {
 
     /*---------------------------------------*/
     /* TODO 3 : produce message              */
+    init_sem();
     s_wait();
     
     Message next_produced;
@@ -189,7 +190,7 @@ int consume(MessageBuffer **buffer, Message **message) {
 
     /*---------------------------------------*/
     /* TODO 4 : consume message              */
-    
+    init_sem();
     s_wait();
 
     while( (**buffer).in != (**buffer).out ) {

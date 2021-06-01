@@ -1,0 +1,7 @@
+consumer usage:
+
+./consumer & ./consumer
+
+producer usage:
+
+./producer "say hi" & ./producer "hello world"
