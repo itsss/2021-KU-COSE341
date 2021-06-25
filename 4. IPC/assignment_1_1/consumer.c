@@ -1,10 +1,9 @@
 #include "message_buffer.h"
 #include <stdio.h>
-#include <stdlib.h>
 
 int main(void) {
     MessageBuffer *buffer;
-    Message *msg = malloc(sizeof(Message));
+    Message *msg;
 
     init_buffer(&buffer);
 
